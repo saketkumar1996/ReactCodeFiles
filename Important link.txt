@@ -1,1 +1,3 @@
 https://chat.openai.com/share/fccbf404-892e-4179-b420-c4aa0908999e
+
+link to create new sandbox with react app: react.new

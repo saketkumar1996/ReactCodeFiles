@@ -19,7 +19,7 @@ function Header(){
   )
 }
 
-function CoreConcept({image,title,description}){
+function CoreConcept({image="Default props",title="default props",description="default props"}){
   return(
     <li>
       <img src={image} alt="" />
@@ -45,7 +45,7 @@ function App() {
           />
           <CoreConcept {...CORE_CONCEPTS[2]}
           />
-          <CoreConcept {...CORE_CONCEPTS[3]}
+          <CoreConcept
           />
         </ul>
         </section>

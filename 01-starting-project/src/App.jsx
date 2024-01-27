@@ -1,3 +1,5 @@
+import reactImg from "./assets/react-core-concepts.png"
+
 const reactDescriptions = ['Fundamental', 'Crucial', 'Core'];
 
 function genRandomInt(max) {
@@ -7,7 +9,7 @@ function genRandomInt(max) {
 function Header(){
   return (
     <header>
-        <img src="src/assets/react-core-concepts.png" alt="Stylized atom" />
+        <img src={reactImg} alt="Stylized atom" />
         <h1>React Essentials</h1>
         <p>
           {reactDescriptions[genRandomInt(2)]} React concepts you will need for almost any app you are

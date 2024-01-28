@@ -1,3 +1,4 @@
+import { useState } from "react";
 import reactImg from "./assets/react-core-concepts.png"
 import CoreConcept from "./components/CoreConcept";
 import Header from "./components/Header/Header";
@@ -7,12 +8,11 @@ import { CORE_CONCEPTS } from "./data";
 
 
 function App() {
-
-let tabContent =  'please click a button';
+const [tabContent,changeTabContent] = useState('please click a button')
 
 function handleSelect(selectedButton){
-  tabContent=selectedButton
-  
+  changeTabContent(selectedButton)
+
 
 }
   return (

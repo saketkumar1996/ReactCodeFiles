@@ -35,14 +35,14 @@ if(selectedTopic){
         <section id="core-concepts">
         <h2>Core Concepts</h2>
         <ul>
-          <CoreConcept {...CORE_CONCEPTS[0]}
-          />
-          <CoreConcept  {...CORE_CONCEPTS[1]}
-          />
-          <CoreConcept {...CORE_CONCEPTS[2]}
-          />
-          <CoreConcept
-          />
+
+          {CORE_CONCEPTS.map((concept)=><CoreConcept 
+          // title={concept.title} 
+          // description={concept.description}
+          // image={concept.image}
+          key={concept.title}
+          {...concept}
+           />)}
         </ul>
         </section>
         <section id="examples">

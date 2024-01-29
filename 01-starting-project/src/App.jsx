@@ -8,10 +8,10 @@ import { CORE_CONCEPTS } from "./data";
 
 
 function App() {
-const [tabContent,changeTabContent] = useState('please click a button')
+const [selectedTopic,setSelectedTopic] = useState('please click a button')
 
 function handleSelect(selectedButton){
-  changeTabContent(selectedButton)
+  setSelectedTopic(selectedButton)
 
 
 }
@@ -41,7 +41,7 @@ function handleSelect(selectedButton){
           <TabButton onSelect={()=>handleSelect('State')}>State</TabButton>
 
           </menu>
-        {tabContent}
+        {selectedTopic}
 
         </section>
       </main>

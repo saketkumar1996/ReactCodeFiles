@@ -4,7 +4,7 @@ function App() {
   return (
     <>
       <Player />
-      <div id="challenges"></div>
+      <div id="challenges">check</div>
     </>
   );
 }
